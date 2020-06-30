@@ -1,0 +1,189 @@
+.landing {
+    display: grid;
+    grid-template-rows: 1fr min-content 2fr 70px 70px;
+    height: 87vh;    
+    width: 100vw;
+
+    &_review {
+        grid-row: 2/2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+        &--title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 6rem;
+            font-family: Great Vibes;
+            color: white;
+            align-self: center;
+            justify-self: center;
+            text-shadow: 2px 2px rgba(0, 0, 0, .25);
+        }
+
+        &--circle {
+           width: 70vw;
+           margin: auto;
+        }
+
+        &--tag {
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: .6rem 1.7rem;
+            position: absolute;
+            background-color: $gold-medium;
+            top: 17rem;
+            right: 5.5rem;
+            font-size: 1.5rem;
+            color: white;
+            font-family: Lobster Two;
+            font-weight: 700;
+            box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .25);
+
+            p {
+                display: inline;
+            }
+
+            .check-mark{
+                margin-left: .8rem;
+                font-size: 1.6rem;
+            }
+
+        }
+
+        #silver-tag {
+            right: 8rem;
+        }
+    }
+
+    .footer-top, .footer-bottom {
+        border-top: 1px solid $grey-light;
+        display: flex;
+        align-items: center;
+        padding: 0 3rem;
+        
+        h5 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-right: auto;
+            color: #333;
+        }
+
+        .icon {
+            height: 3rem;
+            margin-right: 2rem;
+        }
+
+        .chevron {
+            height: 2rem;
+            justify-self: flex-end;
+        }
+
+        #speechbubble {
+            margin-left: 1px;
+            height: 3.2rem;
+        }
+
+    }
+
+    .footer-top {
+        grid-row: 4/5;
+    }
+    
+    .footer-bottom {
+        grid-row: 5/6;
+    }  
+} 
+
+
+/* ==========================================
+    600px
+   ======================================= */
+
+
+   @media only screen and (min-width : 500px) {
+    .landing_review--circle {
+        width: 200px;
+    }
+
+    .landing_review--tag {
+        top: 70%;
+        right: 36%;
+        font-size: 1.2rem;
+        
+        .check-mark{
+            font-size: 1.3rem;
+        }
+
+    }
+}
+
+
+/* ==========================================
+    1000px
+   ======================================= */
+
+
+   @media only screen and (min-width : 1000px) {
+    .landing_review--circle {
+        width: 300px;
+    }
+
+    .landing_review--tag {
+        top: 70%;
+        right: 36%;
+    }
+
+    .vocabulary-list {
+        padding: 0 30rem !important;
+    }
+
+    .vocabulary-heading {
+        padding: 0 37rem !important;
+    }
+}
+
+
+/* ==========================================
+    1200px
+   ======================================= */
+
+
+@media only screen and (min-width : 1200px) {
+    .landing_review--circle {
+        width: 200px;
+    }
+
+    .footer-top, .footer-bottom {
+        padding: 0 40rem !important;
+    }
+
+    .landing_review--tag {
+        top: 70%;
+        right: 42%;
+        font-size: 1.2rem;
+        
+        .check-mark{
+            font-size: 1.3rem;
+        }
+
+    }
+}
+
+
+/* ==========================================
+    1600px
+   ======================================= */
+
+
+@media only screen and (min-width : 1600px) {
+    .landing_review--tag {
+        top: 68%;
+        right: 44%;
+    }
+}
+
+
+    

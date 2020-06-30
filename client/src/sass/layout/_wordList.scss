@@ -1,0 +1,114 @@
+.word-list-heading {
+    position: relative;
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    border-bottom: 1px solid $grey-light;
+
+    & h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    &_count {
+        color: $grey-medium;
+        transition: all .3s;
+    }
+
+    &_options {
+        position: absolute;
+        top: 68%;
+        left: 3rem;
+        transform: translateX(300%);
+        transition: all .3s; 
+    }
+
+    &_edit, &_delete {
+        display: inline-block;
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        
+    }
+
+    &_edit {
+        color: $grey-medium;
+        
+    }
+
+    &_delete {
+        color: lightcoral;
+    }
+
+    &.show-options &_options {
+        transform: translateX(0);
+    }
+
+    &.show-options &_count {
+        transform: translateX(-50%);
+    }
+}
+
+.word-list {
+    height: 65vh;
+    overflow: scroll;
+    width: 100%;
+    list-style: none;
+    padding: 0 2.5rem;
+    margin-top: 2rem;
+    transition: all 2s;
+}
+
+.word-list-item {
+    position: relative;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid $grey-light;
+
+    &_spanish {
+        font-size: 1.7rem;
+        color: $teal-medium;
+        margin-bottom: .7rem;
+        padding-left: 1rem;
+    }
+
+    &_english {
+        font-size: 1.6rem;
+        color: $grey-medium;
+        padding-left: 1rem;
+    }
+
+    &_options {
+        position: absolute;
+        right: 1.5rem;
+        transform: translateX(200%);
+        transition: all .3s; 
+    }
+
+    &_edit, &_delete {
+        display: inline-block;
+        margin-right: 3rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+    }
+
+    &_edit {
+        color: $grey-medium;
+    }
+
+    &_delete {
+        color: lightcoral;
+    }
+
+    &.show-options &_options {
+        transform: translateX(0);
+    }
+
+
+}

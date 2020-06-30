@@ -1,0 +1,61 @@
+.review {
+    padding-top: 30vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 87vh;
+    z-index: 99;
+    transform: translateY(100%);
+    transition: all .5s;
+    background-color: white;
+
+    .english-word {
+        margin-bottom: 3rem;
+        font-weight: 600;
+        z-index: 10;
+        transition: all 0.4s;
+    }
+
+    .small {
+        font-size: 2rem;
+        color: $grey-medium;
+        transform: translateY(-6rem);
+        font-weight: 400;
+    }
+
+    input[type=text] {
+        position: relative;
+        border: none;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        background-color: linen;
+        padding: 10rem;
+        top: -35%;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .correct {
+        color: $green-correct;
+    }
+ 
+
+}
+
+.review-input:focus {
+    border: none !important;
+}
+
+.review-now {
+    transform: translateY(0%);
+}
+

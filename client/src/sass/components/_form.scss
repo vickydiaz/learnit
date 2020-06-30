@@ -1,0 +1,67 @@
+.form-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 2rem;
+    border-top: 1px solid $grey-light;
+    border-bottom: 1px solid $grey-light;
+    margin: 0rem 3rem;
+    z-index: 100;
+
+    .form-heading {
+        font-size: 1.7rem;
+        margin-bottom: 4rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    & button {
+        width: 100%;
+        border: none;
+        background-color: $teal-medium;
+        color: white;
+        font-weight: 700;
+        padding: 1.6rem;
+        border-radius: 5px;
+        margin-top: 2rem;
+
+        &:active, &:focus {
+            outline: none;
+            border: 2px solid $teal-light;
+        }
+    }
+}
+
+input[type=text] {
+    width: 100%;
+    font-family: inherit;
+    margin-bottom: 2.5rem;
+    border: 1px solid $grey-light;
+    padding: 1.1rem 1.5rem;
+    border-radius: 5px;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $teal-light;
+    }
+}
+
+
+// Slide up form
+.slide-form {
+    position: absolute;
+    width: 87hv;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: translateY(100%);
+    transition: all .5s;
+    background-color: white;
+}
+
+.slide-up-form {
+    transform: translateY(0%);
+}

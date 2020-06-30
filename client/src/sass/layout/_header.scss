@@ -1,0 +1,17 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13vh;
+    background: linear-gradient(-140deg, $teal-light, $teal-medium);
+    display: flex;
+    z-index: 100;
+
+    h1 {
+        font-family: Lobster Two;
+        color: white;
+        font-weight: 400;
+        margin: auto;
+    }
+}

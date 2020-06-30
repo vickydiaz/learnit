@@ -1,0 +1,28 @@
+.btn-round {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0rem  0rem 1rem .5rem rgba(0, 0, 0, .05);
+
+    i {
+        margin: auto;
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-gold {
+        background-color: rgba($gold-medium, .80);
+}
+
+.fixed-bottom {
+    position: absolute;
+    bottom: 3rem;
+    right: 3.5rem;
+}
