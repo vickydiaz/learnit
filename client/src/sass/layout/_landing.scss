@@ -54,7 +54,7 @@
         }
 
         #silver-tag {
-            right: 8rem;
+             margin-right: 3rem;
         }
     }
 
@@ -180,8 +180,8 @@
 
 @media only screen and (min-width : 1600px) {
     .landing_review--tag {
-        top: 68%;
-        right: 44%;
+        top: 70%  !important;
+        right: 80%  !important;
     }
 }
 
